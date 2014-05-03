@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="shortcut icon" href="../../assets/ico/favicon.ico">
+
+  <title>C. Stone Home Improvement</title>
+
+  <%= render 'layouts/structure/header-scripts' %>
+</head>
+
+<body>
+
+<%= render 'layouts/structure/navigation' %>
+
+<!-- Begin page content -->
+
+<% if current_page?(root_path) %>
+    <%= render 'layouts/structure/banner' %>
+<% end %>
+
+
+
+<section class="content">
+  <div class="container">
+    <div class="row">
+        <%= yield %>
+    </div>
+
+  </div>
+</section>
+
+<%= render 'layouts/structure/footer' %>
+<%= render 'layouts/structure/footer-scripts' %>
+</body>
+</html>
