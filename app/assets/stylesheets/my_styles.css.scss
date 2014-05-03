@@ -1,0 +1,170 @@
+@charset "UTF-8";
+/* CSS Document */
+@import url(http://fonts.googleapis.com/css?family=Lobster+Two);
+@import url(http://fonts.googleapis.com/css?family=Rouge+Script);
+@import url(http://fonts.googleapis.com/css?family=Raleway);
+
+body {
+  margin-top: 90px;
+  font-family: 'Raleway', sans-serif;
+}
+
+
+a {
+  color: #AC6030;
+  text-decoration: none;
+  &:hover {
+    color: #AC6030;
+  }
+}
+
+
+.nav > li > a:hover, .nav > li > a:focus {
+  text-decoration: none;
+  background-color: #AC6030;
+  color: #FFFFFF;
+}
+
+.page-header > h1 {
+  font-family: 'Lobster Two', 'cursive';
+}
+
+.fancyquote {
+  font-family: 'Rouge Script', cursive;
+  font-size: 48px;
+}
+
+
+.navbar-brand {
+  font-family: 'Lobster Two', 'cursive';
+  font-size: 36px;
+}
+
+.navbar-default {
+  background:url(../img/wood2.jpg) repeat-x;
+  border-color: none;
+  padding:20px 0;
+}
+
+.navbar-fixed-top {
+  border-bottom: 1px solid #94562C;
+}
+
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+  color: #FFFFFF;
+  background-color: transparent;
+}
+
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+  color: #FFFFFF;
+  background-color: #2C3E50;
+}
+
+
+.navbar-default .navbar-brand {
+  color: #FFFFFF;
+}
+
+.navbar-default .navbar-nav>li>a {
+  color: #FFFFFF;
+}
+
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+  color: #FFFFFF;
+  background-color: #94562C;
+  border-radius: 4px;
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+  color: #FFFFFF;
+  background-color: #94562C;
+  border-radius: 4px;
+}
+
+
+.navbar-collapse {
+  max-height: 340px;
+  overflow-x: visible;
+  padding-right: 15px;
+  padding-left: 15px;
+  border-top: none;
+  box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.1) inset;
+}
+
+
+
+.content {
+  margin: 40px 0;
+}
+
+.tout {
+  /*background:url(../img/wood2.jpg) repeat-x;*/
+  background-color: #94562C;
+  color: #ffffff;
+  padding: 40px 0;
+}
+
+
+
+footer {
+  background-color: #94562C;
+  color: #FFFFFF;
+  padding:10px;
+}
+
+
+
+.carousel-caption {
+  position: absolute;
+  right: 15%;
+  bottom: 20px;
+  left: 15%;
+  z-index: 10;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #FFF;
+  text-align: center;
+  text-shadow: 2px 1px #000000;
+}
+
+.carousel-caption {
+  top: 75px;
+}
+
+
+
+
+.page-header {
+  padding-bottom: 9px;
+  margin: 10px 0 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.fancy-slider {
+  font-family: 'Lobster Two', 'cursive';
+  font-size: 60px;
+}
+
+
+
+@media screen and (min-width: 768px) {
+  .carousel-caption {
+    right: 20%;
+    left: 20%;
+    padding-bottom: 30px;
+  }
+}
+
+
+
+
+@media (max-width: 1100px) {
+
+  .carousel-caption {
+    top: 8%;
+  }
+
+}
+
+
