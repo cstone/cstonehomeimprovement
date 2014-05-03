@@ -1,6 +1,6 @@
 <% @page_header = "Portfolio :: #{@project.title}" %>
 
-<div class="row">
+<div>
   <div class="col-md-6">
     <%= image_tag("#{@project.project_image.url}", class: 'img-responsive') %>
   </div>
@@ -8,7 +8,7 @@
 
 
   <div class="col-md-6">
-    <h4><%= link_to "#{@project.title}", '#' %></h4>
+    <h4><%= @project.title %></h4>
     <p><%= simple_format @project.description %></p>
   </div>
 
