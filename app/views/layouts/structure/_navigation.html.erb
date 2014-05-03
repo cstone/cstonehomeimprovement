@@ -12,12 +12,7 @@
     </div>
     <div class="collapse navbar-collapse">
       <ul class="nav navbar-nav pull-right">
-        <li class=<%= cpa(page_path('about-us')) %>><%= link_to 'About Us', page_path('about-us') %></li>
-        <li class=<%= cpa(page_path('services')) %>><%= link_to 'Services', page_path('services') %></li>
-        <li class=<%= cpa(page_path('about-us')) %>><%= link_to 'About Us', page_path('about-us') %></li>
-        <li class=<%= cpa(projects_path) %>><%= link_to 'Recent Projects', projects_path %></li>
-        <li class=<%= cpa(testimonials_path) %>><%= link_to 'Testimonials', testimonials_path %></li>
-        <li class=<%= cpa(contact_us_path) %>><%= link_to 'Contact', contact_us_path %></li>
+        <%= render 'layouts/structure/nav-list-items' %>
       </ul>
     </div><!--/.nav-collapse -->
   </div>
