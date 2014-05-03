@@ -1,8 +1,10 @@
 class ProjectsController < ApplicationController
+  layout 'no-right-side'
+
   # GET /projects
   # GET /projects.json
   def index
-    @projects = Project.all
+    @projects = Project.page(params[:page]).per(5)
 
     respond_to do |format|
       format.html # index.html.erb
