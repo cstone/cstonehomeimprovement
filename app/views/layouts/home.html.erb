@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="shortcut icon" href="../../assets/ico/favicon.ico">
+
+  <title>C. Stone Home Improvement</title>
+
+<%= render 'layouts/structure/header-scripts' %>
+</head>
+
+<body>
+
+<%= render 'layouts/structure/navigation' %>
+
+<!-- Begin page content -->
+
+<%= render 'layouts/structure/banner' %>
+
+
+
+
+<section class="content">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-9">
+        <%= yield %>
+      </div>
+      <div class="col-md-3">
+        <%= render 'right-nav' %>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">&copy; 2014 C. Stone Home Improvement</div>
+      <div class="col-md-6 text-right">Designed by Stizelwebs.com</div>
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+
+<%= render partial: 'layouts/structure/footer-scripts' %>
+</body>
+</html>
