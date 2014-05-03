@@ -1,16 +1,13 @@
 Cstonehomeimprovement::Application.routes.draw do
-  get "home/index"
 
-  resources :projects
-
-
-  resources :testimonials
-
+ root to: 'home#index'
 
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
 
   resources :pages
+  resources :projects
+  resources :testimonials
 
 
   # The priority is based upon order of creation:
