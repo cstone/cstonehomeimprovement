@@ -9,5 +9,7 @@ class ApplicationController < ActionController::Base
     @home_content = DynamicContent.get_value(:home_content)
     @contact_name = DynamicContent.get_value(:contact_name)
     @contact_content = DynamicContent.get_value(:contact_content)
+    @project_content = DynamicContent.get_value(:project_content)
+    @testimonial_content = DynamicContent.get_value(:testimonial_content)
   end
 end
