@@ -40,6 +40,7 @@ gem 'rmagick', '~>2.13.2', :require => 'RMagick'
 gem 'figaro'
 gem 'kaminari'
 gem 'contact_us', '~> 0.5.0'
+gem 'activeadmin', github: 'gregbell/active_admin'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
