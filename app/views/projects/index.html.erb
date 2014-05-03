@@ -1,8 +1,7 @@
 <% @page_header = 'Portfolio' %>
 
-<div class="row">
-  <%= @project_content.html_safe if @project_content %>
-</div>
+<p><%= @project_content.html_safe if @project_content %></p>
+
 
 <% @projects.each do |project| %>
     <div class="row">
