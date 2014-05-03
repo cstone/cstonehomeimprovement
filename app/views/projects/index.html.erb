@@ -1,27 +1,24 @@
-<h1>Listing projects</h1>
+<% @page_header = 'Portfolio' %>
 
-<table>
-  <tr>
-    <th>Title</th>
-    <th>Description</th>
-    <th>Project image</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
+<div class="row">
+  <%= @project_content.html_safe if @project_content %>
+</div>
 
 <% @projects.each do |project| %>
-  <tr>
-    <td><%= project.title %></td>
-    <td><%= project.description %></td>
-    <td><%= project.project_image %></td>
-    <td><%= link_to 'Show', project %></td>
-    <td><%= link_to 'Edit', edit_project_path(project) %></td>
-    <td><%= link_to 'Destroy', project, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-  </tr>
+    <div class="row">
+      <div class="col-md-6">
+        <%= link_to(image_tag("#{project.project_image.url}"), project ) %>
+      </div>
+
+
+
+      <div class="col-md-6">
+        <h4><%= link_to "#{project.title}", project %></h4>
+        <p><%= simple_format project.description %></p>
+      </div>
+
+    </div>
+    <hr/>
 <% end %>
-</table>
 
-<br />
-
-<%= link_to 'New Project', new_project_path %>
+<%= paginate @projects %>
