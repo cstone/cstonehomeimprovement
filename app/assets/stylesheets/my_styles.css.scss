@@ -111,6 +111,13 @@ footer {
   background-color: #94562C;
   color: #FFFFFF;
   padding:10px;
+  a {
+    color: #FFFFFF;
+    text-decoration: none;
+    &:hover {
+      color: #FFFFFF;
+    }
+  }
 }
 
 
