@@ -19,8 +19,9 @@
 
 <!-- Begin page content -->
 
-
-
+<% if current_page?(root_path) %>
+    <%= render 'layouts/structure/banner' %>
+<% end %>
 
 
 
