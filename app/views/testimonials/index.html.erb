@@ -2,7 +2,7 @@
 <h4>Testimonials</h4>
 
 <p><%= @testimonial_content.html_safe if @testimonial_content %></p>
-
+<hr/>
 
 <% @testimonials.each do |testimonial| %>
         <p><%= simple_format testimonial.content %></p>

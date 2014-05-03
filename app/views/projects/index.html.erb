@@ -1,7 +1,7 @@
 <% @page_header = 'Portfolio' %>
 <h4>Recent Projects</h4>
 <p><%= @project_content.html_safe if @project_content %></p>
-
+<hr/>
 
 <% @projects.each do |project| %>
     <div class="row">
