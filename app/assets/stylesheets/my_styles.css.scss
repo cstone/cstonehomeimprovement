@@ -4,6 +4,11 @@
 @import url(http://fonts.googleapis.com/css?family=Rouge+Script);
 @import url(http://fonts.googleapis.com/css?family=Raleway);
 
+
+$white: #FFFFFF;
+$black: #000000;
+
+
 body {
   margin-top: 90px;
   font-family: 'Raleway', sans-serif;
@@ -22,7 +27,7 @@ a {
 .nav > li > a:hover, .nav > li > a:focus {
   text-decoration: none;
   background-color: #AC6030;
-  color: #FFFFFF;
+  color: $white;
 }
 
 .page-header > h1 {
@@ -51,39 +56,39 @@ a {
 }
 
 .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
-  color: #FFFFFF;
+  color: $white;
   background-color: transparent;
 }
 
 
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
-  color: #FFFFFF;
+  color: $white;
   background-color: #94562C;
   border-radius: 4px;
 }
 
 .nav-pills>li.active>a, .nav-pills>li.active>a:hover, .nav-pills>li.active>a:focus {
-  color: #fff;
+  color: $white;
   background-color: #94562C;
 }
 
 
 .navbar-default .navbar-brand {
-  color: #FFFFFF;
+  color: $white;
 }
 
 .navbar-default .navbar-nav>li>a {
-  color: #FFFFFF;
+  color: $white;
 }
 
 .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
-  color: #FFFFFF;
+  color: $white;
   background-color: #94562C;
   border-radius: 4px;
 }
 
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
-  color: #FFFFFF;
+  color: $white;
   background-color: #94562C;
   border-radius: 4px;
 }
@@ -103,12 +108,13 @@ a {
 .content {
   margin: 40px 0;
   padding-top: 30px;
+  min-height: 470px;
 }
 
 .tout {
   /*background:url(../img/wood2.jpg) repeat-x;*/
   background-color: #94562C;
-  color: #ffffff;
+  color: $white;
   padding: 40px 0;
 }
 
@@ -116,13 +122,13 @@ a {
 
 footer {
   background-color: #94562C;
-  color: #FFFFFF;
+  color: $white;
   padding:10px;
   a {
-    color: #FFFFFF;
+    color: $white;
     text-decoration: none;
     &:hover {
-      color: #FFFFFF;
+      color: $white;
     }
   }
 }
@@ -139,7 +145,7 @@ footer {
   padding-bottom: 20px;
   color: #FFF;
   text-align: center;
-  text-shadow: 2px 1px #000000;
+  text-shadow: 2px 1px $black;
 }
 
 .carousel-caption {
