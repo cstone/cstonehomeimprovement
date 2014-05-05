@@ -10,8 +10,8 @@ ActiveAdmin.register Project do
     column :title do |title|
       title.title.truncate(50).html_safe
     end
-    column :title do |title|
-      title.title.truncate(75).html_safe
+    column :description do |title|
+      title.description.truncate(75).html_safe
     end
     default_actions
   end
