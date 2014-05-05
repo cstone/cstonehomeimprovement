@@ -70,5 +70,6 @@ module Cstonehomeimprovement
     config.app_generators.scaffold_controller = :scaffold_controller
 
     config.assets.precompile += ['my_styles.css']
+    config.assets.precompile += Ckeditor.assets
   end
 end
