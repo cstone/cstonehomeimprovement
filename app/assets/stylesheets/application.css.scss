@@ -9,7 +9,10 @@
  * compiled file, but it's generally better to create a new file per style scope.
  *
  *= require_self
- *= require formtastic-bootstrap
- *= require my_styles
  */
 
+
+
+@import "formtastic-bootstrap";
+@import "bootstrap";
+@import "my_styles";
