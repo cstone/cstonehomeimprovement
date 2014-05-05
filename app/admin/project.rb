@@ -21,7 +21,7 @@ ActiveAdmin.register Project do
   form do |f|
     f.inputs do
       f.input :title
-      f.input :description
+      f.input :description, :as => :ckeditor, :input_html => { :ckeditor => { :height => 400 } }
       f.input :project_image, :as => :file, :hint => f.object.project_image.present? \
     ? f.template.image_tag(f.object.project_image.url(:thumb))
       : f.template.content_tag(:span, "no photo yet")
