@@ -10,17 +10,10 @@ class CkeditorPictureUploader < CarrierWave::Uploader::Base
   # Choose what kind of storage to use for this uploader:
   storage :fog
 
-  include CarrierWave::MimeTypes
-  process :set_content_type
-
   # Override the directory where uploaded files will be stored.
   # This is a sensible default for uploaders that are meant to be mounted:
   def store_dir
     "uploads/ckeditor/pictures/#{model.id}"
-  end
-
-  def cache_dir
-    "#{Rails.root}/tmp/uploads"
   end
 
 
@@ -44,7 +37,7 @@ class CkeditorPictureUploader < CarrierWave::Uploader::Base
   end
 
   version :content do
-    process :resize_to_limit => [300, 0]
+    process :resize_to_limit => [500, 0]
   end
 
   # Add a white list of extensions which are allowed to be uploaded.
