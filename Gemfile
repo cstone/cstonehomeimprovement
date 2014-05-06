@@ -44,6 +44,7 @@ gem 'contact_us', '~> 0.5.0'
 gem 'activeadmin', github: 'gregbell/active_admin'
 gem 'bootstrap-sass', '~> 3.1.1'
 gem 'ckeditor'
+gem 'mini_magick'
 
 
 # To use ActiveModel has_secure_password
